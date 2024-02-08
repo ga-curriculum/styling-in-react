@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - Setup](./assets/hero.png)
+# ![Styling in React - Setup](./assets/hero.png)
 
 ## Setup
 
@@ -8,11 +8,11 @@ Open your Terminal application and navigate to your **`~/code/ga/lectures`** dir
 cd ~/code/ga/lectures
 ```
 
-Make a new directory called **`[tktk-module-name]`**, then enter this directory:
+Make a new directory called **`[styling-in-react]`**, then enter this directory:
 
 ```bash
-mkdir [tktk-module-name]
-cd [tktk-module-name]
+mkdir [styling-in-react]
+cd [styling-in-react]
 ```
 
 <!-- Other setup instructions here -->

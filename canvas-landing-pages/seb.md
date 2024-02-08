@@ -1,1 +1,1 @@
-# ![[tktk Module Name]](../assets/tktk-hero.png)
+# ![Styling in React](../assets/tktk-hero.png)
