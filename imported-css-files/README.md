@@ -1,34 +1,61 @@
-# ![Styling in React - tktk Microlesson Name](./assets/hero.png)
+# ![Styling in React - Imported CSS Files](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able add style via imported CSS files in their React app.
 
-#### Example 1 : Normal CSS Stylesheets ( This should be review )
+## Bringing our button component into `App.jsx`
 
-<br>
+`App.jsx`:
+```jsx
+import './App.css';
+import Button1 from './components/example-1-normal-css/Button'
+.
+.
+.
+function App() {
+  return (
+    <div className='App'>
+      <Button1 buttonText='Example 1' />
+    </div>
+  )
+}
+```
 
-1. Create a regular css style sheet in the example component folder
-2. Import into your component file
-3. Add classes in JSX using the JSX attribute `className`
+### Create a css style sheet in our component folder
 
-<br>
-<br>
+```bash
+touch src/components/example-1-normal-css/button.css
+```
 
-✨ Let's give it a fancy background-color: #2465f1
+### Import the css file into your component file
 
-✨ Bonus: Create a second class reversing the text color and background-color ( think themes! )
+`src/components/example-1-normal-css/Button.jsx`:
+```jsx
+import './button.css'
+```
+### Add classes in JSX using the JSX attribute `className`
 
-✨ Bonus: Refactor your component so that you can pass a class as props and change the look of your button from '<App>'
+```jsx
+import './button.css';
 
-<br>
-<br>
+const Button = ({ buttonText }) => {
+  return (
+    <button className='btn'>{ buttonText }</button>
+  )
+}
 
-#### Review Questions
+export default Button
+```
 
-**❓ What attribute do we use in JSX to apply css classes to components?**
+### Add style to our `button.css` file:
 
-**❓ Can classes be passed down to components in props?**
-
-<br>
-<br>
-<br>
-<br>
+`src/components/example-1-normal-css/button.css`:
+```css
+.btn {
+  background-color: #2465f1;
+  border-radius: 8px;
+  color: white;
+  font-size: 24pt;
+  padding: 15px 50px;
+  width: 300px;
+}
+```

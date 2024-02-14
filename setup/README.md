@@ -190,7 +190,7 @@ Import your fonts in `App.css` and add your font family styles to '*'.
 `App.css`:
 ```css
 /* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 
 * {
