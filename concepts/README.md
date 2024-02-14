@@ -7,10 +7,8 @@
 Like many things React, styling is done a little differently than what we've become accustomed to.
 
 There are several popular methods for styling react components, what you choose to use in your deliverables is up to you. There is no true "industry standard" and exposure to multiple styles and examples is ideal. In a real job setting, you will just adopt whatever librarys or conventions are used in the existing codebase.
-<br>
-<br>
 
-### TL:DR Some Options for Styling React Components
+## Some Options for Styling React Components
 
 Today, we will look at a few of the more popular ways to style the components that comprise a React UI:
 
@@ -28,8 +26,3 @@ Today, we will look at a few of the more popular ways to style the components th
 
 6. **SASS**: Requires a package: `npm install sass`
 [Sass](https://sass-lang.com/): Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
-
-
-<br>
-<br>
-<br>
