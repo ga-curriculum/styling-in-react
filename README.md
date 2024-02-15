@@ -16,7 +16,7 @@ In this module, we'll explore six different approaches to applying style in your
 | Lesson | Video Time | Video | Skills |
 | ------ |:----------:|:-----:| ------ |
 | [Setup](./setup/README.md) | -- | -- | Setting up the development environment |
-| [Concepts](./concepts/README.md) | -- | -- | tktk what we are doing and why |
+| [Concepts](./concepts/README.md) | -- | -- | Talk about why we are exploring six approaches to style |
 | [Imported CSS files](./imported-css-files/README.md) | -- | -- | Style components using imported CSS files |
 | [Inline CSS in JSX](./inline-css-in-jsx/README.md) | -- | -- | Style components using inline CSS in JSX |
 | [CSS in JS](./css-in-js/README.md) | -- | -- | Style components using CSS in JS |
