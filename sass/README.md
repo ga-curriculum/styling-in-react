@@ -1,74 +1,73 @@
-# ![Styling in React - tktk Microlesson Name](./assets/hero.png)
+# ![Styling in React - Sass](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to use Sass to style their React components
 
-#### Example 6 : Sass
+## Using Sass
 
-<br>
-
-*CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass has features that don't exist in CSS yet like nesting, mixins, inheritance, and other nifty goodies that help you write robust, maintainable CSS.*
+CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass has features that don't exist in CSS yet like nesting, mixins, inheritance, and other nifty goodies that help you write robust, maintainable CSS.
 
 *Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file that you can use in your website...* [source](https://sass-lang.com/guide)
 
 ![sass](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)
 
+
+### Install the Sass package to our project
+
 We'll be using [this package](https://www.npmjs.com/package/sass) to install Sass.
 
-
-This package is a distribution of Dart Sass, compiled to pure JavaScript with no native code or external dependencies. It provides a command-line sass executable and a Node.js API.
-
-You can install Sass globally using `npm install -g sass` which will provide access to the sass executable. You can also add it to your project using `npm install --save-dev sass`
-
-We'll be using the second option.
-
-Create a new file in your component example folder called `button.sass`
-
-Add your default button styles using the [sass syntax documentation](https://sass-lang.com/documentation/style-rules).
-
-Import your sass file in your button component just like a normal css file. 
-
-```jsx
-
-import "./button.sass"
-
-export default function Button({ text }) {
-  return <button className="sassy-button">{ text }</button>;
-}
-
+```bash
+npm install --save-dev sass
 ```
 
-Some fun things to explore in sass -
+### Create Sass file for our component
 
-  -Variables
-  -Nesting
-  -Mixins
-  -Functions
-  -Partials & Importing
-  -Inheritance
-  -The '&' Operator
-  -Control Directives (if else)
-  -Interpolation
-  -Placeholders
+```bash
+touch src/component/example-6-sass/button.sass
+```
 
-✨  Let's give it a fancy background-color: #ce649a
+Once the file is created we'll add our styles to it using the [sass syntax documentation](https://sass-lang.com/documentation/style-rules):
 
-✨  Bonus: refector to accept props and add a prop style
+`src/component/example-6-sass/button.sass`:
+```scss
+$sass-pink: #ce649a
+$bright: hotpink
 
-<br>
-<br>
+.sassy-button
+  background-color: $sass-pink
+  border-radius: 8px
+  color: white
+  font-size: 24pt
+  padding: 15px 50px
+  width: 300px
+  
+  &:hover
+    background-color: $bright
+```
 
-#### Review Questions
+### Import and use Sass
 
-**❓ What is sass?**
+`src/component/example-6-sass/Button.jsx`:
+```jsx
 
-**❓ Are there extra tools required when using a CSS preprocessor like Sass?**
+import './button.sass' // importing our Sass file
 
-**❓ Why is sass so popular?**
+const Button = ({ buttonText }) => {
+  return <button className='sassy-button'>{ buttonText }</button>; // using the class name from our Sass file
+}
 
+export default Button;
+```
 
-<br>
-<br>
+Here is a short list of things to explore in sass:
+  - Variables
+  - Nesting
+  - Mixins
+  - Functions
+  - Partials & Importing
+  - Inheritance
+  - The '&' Operator
+  - Control Directives (if else)
+  - Interpolation
+  - Placeholders
 
 **You now know 6 different ways to style react components!**
-
-#### Which was your favorite?
