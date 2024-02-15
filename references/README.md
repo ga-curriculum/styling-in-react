@@ -2,12 +2,7 @@
 
 ## Lesson references
 
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()
-
-## Level Up references
-
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()
-- [tktk descriptive name of link]()
+- [react-jss documentation](https://cssinjs.org/react-jss/?v=v10.10.0)
+- [styled-components documentation](https://www.npmjs.com/package/styled-components)
+- [Sass Guide](https://sass-lang.com/guide)
+- [Sass syntax documentation](https://sass-lang.com/documentation/style-rules)
