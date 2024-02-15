@@ -1,50 +1,68 @@
-# ![Styling in React - tktk Microlesson Name](./assets/hero.png)
+# ![Styling in React - Styled Components](./assets/hero.png)
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** By the end of this lesson, students will be able to add style via an NPM package known as `styled-components`
 
-#### Example 4 : Styled Components
-
-<br>
-
-To use Styled Components we will need to install the package: [styled-components](https://www.npmjs.com/package/styled-components)
-
-`npm install styled-components`
+## Styled Components
 
 Utilising [tagged template literals](https://wesbos.com/tagged-template-literals) (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components. It also removes the mapping between components and styles. [source](https://styled-components.com/docs)
 
-```jsx
-import styled from "styled-components";
+To use Styled Components we will need to install the package: [styled-components](https://www.npmjs.com/package/styled-components)
 
-export default function Button({ text }) {
+```bash
+npm install styled-components
+```
+
+Next, we'll import the package at the top of the component as `styled`
+
+`src/components/example-4-styled-components/Button.jsx`:
+```jsx
+import styled from 'styled-components'; // top of the component
+```
+
+After we have that imported, we will declare a variable that holds a styled button with our styles we want to apply to our component.  Note that we are using smart quotes so has to have these styles on multiple lines:
+
+`src/components/example-4-styled-components/Button.jsx`:
+```jsx
+
+const Button = ({ text }) => {
   
   const StyledButton = styled.button`
-    add styles here using css syntax
+    background-color: #86ba8a;
+    border-radius: 8px;
+    color: #3d3d3d;
+    padding: 15px 50px;
+    font-size: 24pt;
+    width: 300px;
   `;
+```
 
+Lastly, we will take that variable and render it as a component:
+
+```jsx
   return (
     <StyledButton>{ text }</StyledButton>
   );
 }
 ```
 
-<br>
-<br>
+The full styled component looks like this:
 
-✨  Let's give it a fancy background-color: #86ba8a  &  text color: #3d3d3d
+`src/components/example-4-styled-components/Button.jsx`:
+```jsx
+import styled from 'styled-components'
 
-✨  Bonus: refector to accept props and add a prop style
+const StyledButton = styled.button`
+  background-color: #86ba8a;
+  border-radius: 8px;
+  color: #3d3d3d;
+  padding: 15px 50px;
+  font-size: 24pt;
+  width: 300px;
+`;
 
-<br>
-<br>
+const Button({ buttonText }) => {
+  return <StyledButton>{buttonText}</StyledButton>;
+}
 
-#### Review Questions
-
-**❓ What syntax is used inside the tagged template literal?**
-
-**❓ What is one benefit of using styled components?**
-
-<br>
-<br>
-<br>
-<br>
-
+export default Button;
+```
