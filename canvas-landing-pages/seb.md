@@ -1,1 +1,1 @@
-# ![Styling in React](../assets/tktk-hero.png)
+# ![Styling in React](../assets/hero.png)
