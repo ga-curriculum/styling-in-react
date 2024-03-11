@@ -1,4 +1,4 @@
-# ![Styling in React](./assets/tktk-hero.png)
+# ![Styling in React](./assets/hero.png)
 
 ## About
 
@@ -9,7 +9,6 @@ In this module, we'll explore six different approaches to applying style in your
 - Intro to React
 - Building Your First React App
 - React Components
-
 
 ## Content
 
@@ -25,11 +24,9 @@ In this module, we'll explore six different approaches to applying style in your
 | [SASS](./sass/README.md) | -- | -- | Style components using SASS |
 | **Total content** | -- | -- |  |
 
-
 ## References
 
 📖 [Reference Materials](./references/README.md)
-
 
 ## Internal resources
 

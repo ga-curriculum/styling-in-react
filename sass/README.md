@@ -11,7 +11,7 @@ CSS on its own can be fun, but stylesheets are getting larger, more complex, and
 ![sass](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)
 
 
-### Install the Sass package to our project
+## Installing the Sass package
 
 We'll be using [this package](https://www.npmjs.com/package/sass) to install Sass.
 
@@ -19,7 +19,7 @@ We'll be using [this package](https://www.npmjs.com/package/sass) to install Sas
 npm install --save-dev sass
 ```
 
-### Create Sass file for our component
+## Creating a Sass file for our component
 
 ```bash
 touch src/component/example-6-sass/button.sass
@@ -27,8 +27,8 @@ touch src/component/example-6-sass/button.sass
 
 Once the file is created we'll add our styles to it using the [sass syntax documentation](https://sass-lang.com/documentation/style-rules):
 
-`src/component/example-6-sass/button.sass`:
 ```scss
+// src/component/example-6-sass/button.sass
 $sass-pink: #ce649a
 $bright: hotpink
 
@@ -44,21 +44,21 @@ $bright: hotpink
     background-color: $bright
 ```
 
-### Import and use Sass
+## Importing and using Sass
 
-`src/component/example-6-sass/Button.jsx`:
 ```jsx
-
+// src/component/example-6-sass/Button.jsx
 import './button.sass' // importing our Sass file
 
 const Button = ({ buttonText }) => {
-  return <button className='sassy-button'>{ buttonText }</button>; // using the class name from our Sass file
-}
+  return <button className='sassy-button'>{buttonText}</button>; // using the class name from our Sass file
+};
 
 export default Button;
 ```
 
-Here is a short list of things to explore in sass:
+Here is a short list of things to explore in Sass:
+
   - Variables
   - Nesting
   - Mixins

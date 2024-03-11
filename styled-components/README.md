@@ -2,9 +2,9 @@
 
 **Learning objective:** By the end of this lesson, students will be able to add style via an NPM package known as `styled-components`
 
-## Styled Components
+## Styled components
 
-Utilising [tagged template literals](https://wesbos.com/tagged-template-literals) (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components. It also removes the mapping between components and styles. [source](https://styled-components.com/docs)
+Utilising [tagged template literals](https://wesbos.com/tagged-template-literals) (a recent addition to JavaScript) and the power of CSS, styled-components allow you to write actual CSS code to style your components. It also removes the mapping between components and styles. [source](https://styled-components.com/docs)
 
 To use Styled Components we will need to install the package: [styled-components](https://www.npmjs.com/package/styled-components)
 
@@ -14,16 +14,15 @@ npm install styled-components
 
 Next, we'll import the package at the top of the component as `styled`
 
-`src/components/example-4-styled-components/Button.jsx`:
 ```jsx
+// src/components/example-4-styled-components/Button.jsx
 import styled from 'styled-components'; // top of the component
 ```
 
 After we have that imported, we will declare a variable that holds a styled button with our styles we want to apply to our component.  Note that we are using smart quotes so has to have these styles on multiple lines:
 
-`src/components/example-4-styled-components/Button.jsx`:
 ```jsx
-
+// src/components/example-4-styled-components/Button.jsx
 const Button = ({ text }) => {
   
   const StyledButton = styled.button`
@@ -42,14 +41,14 @@ Lastly, we will take that variable and render it as a component:
   return (
     <StyledButton>{ text }</StyledButton>
   );
-}
+};
 ```
 
 The full styled component looks like this:
 
-`src/components/example-4-styled-components/Button.jsx`:
 ```jsx
-import styled from 'styled-components'
+// src/components/example-4-styled-components/Button.jsx
+import styled from 'styled-components';
 
 const StyledButton = styled.button`
   background-color: #86ba8a;
@@ -62,7 +61,7 @@ const StyledButton = styled.button`
 
 const Button({ buttonText }) => {
   return <StyledButton>{buttonText}</StyledButton>;
-}
+};
 
 export default Button;
 ```
