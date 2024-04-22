@@ -8,7 +8,7 @@ CSS on its own can be fun, but stylesheets are getting larger, more complex, and
 
 _Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file that you can use in your website..._ [source](https://sass-lang.com/guide)
 
-![sass](https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)
+![sass](https://sass-lang.com/assets/img/logos/logo.svg)
 
 ## Installing the Sass package
 
