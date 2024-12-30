@@ -25,7 +25,6 @@ courses {
       mls.concepts
       mls.importedCssFiles
       mls.inlineCssInJsx
-      mls.cssInJs
       mls.styledComponents
       mls.cssModules
       mls.sass
@@ -39,7 +38,6 @@ courses {
       mls.concepts
       mls.importedCssFiles
       mls.inlineCssInJsx
-      mls.cssInJs
       mls.styledComponents
       mls.cssModules
       mls.sass
@@ -53,7 +51,6 @@ courses {
       mls.concepts
       mls.importedCssFiles
       mls.inlineCssInJsx
-      mls.cssInJs
       mls.styledComponents
       mls.cssModules
       mls.sass

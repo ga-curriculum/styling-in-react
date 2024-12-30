@@ -60,16 +60,6 @@
           "estimatedDeliveryTimeInMinutes": 0
         },
         {
-          "friendlyName": "CSS in JS",
-          "dirName": "css-in-js",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
           "friendlyName": "Styled Components",
           "dirName": "styled-components",
           "type": "Content",
@@ -169,16 +159,6 @@
           "estimatedDeliveryTimeInMinutes": 0
         },
         {
-          "friendlyName": "CSS in JS",
-          "dirName": "css-in-js",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
           "friendlyName": "Styled Components",
           "dirName": "styled-components",
           "type": "Content",
@@ -270,16 +250,6 @@
         {
           "friendlyName": "Inline CSS in JSX",
           "dirName": "inline-css-in-jsx",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "CSS in JS",
-          "dirName": "css-in-js",
           "type": "Content",
           "skill": "",
           "learningObjective": "",

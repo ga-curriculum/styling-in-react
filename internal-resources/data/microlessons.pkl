@@ -30,13 +30,6 @@ inlineCssInJsx = new Template.Microlesson {
   videoUrl = ""
 }
 
-cssInJs = new Template.Microlesson {
-  friendlyName = "CSS in JS"
-  dirName = "css-in-js"
-  type = "Content"
-  videoUrl = ""
-}
-
 styledComponents = new Template.Microlesson {
   friendlyName = "Styled Components"
   dirName = "styled-components"
