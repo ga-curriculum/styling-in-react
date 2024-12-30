@@ -1,8 +1,11 @@
-# ![Styling in React - Setup](./assets/hero.png)
+<h1>
+  <span class="headline">Styling in React</span>
+  <span class="subhead">Setup</span>
+</h1>
 
 ## Setup
 
-Open your Terminal application and navigate to your **`~/code/ga/lectures`** directory:
+Open your Terminal application and navigate to your `~/code/ga/lectures` directory:
 
 ```bash
 cd ~/code/ga/lectures
@@ -35,30 +38,35 @@ code .
 
 ### Configuring ESLint
 
-Before we begin, we need to adjust the ESLint configuration. Add the following rules to the `.eslintrc.cjs` file:
+Before we begin, we need to adjust the ESLint configuration. Add the indicated rules to the `rules` object in your `eslint.config.js` file:
 
-```cjs
-rules: {
-  'react-refresh/only-export-components': [
-    'warn',
-    { allowConstantExport: true },
-  ],
-  'react/prop-types': 'off', // add this line
-  'react/no-unescaped-entities': 'off' // add this line
-},
+```javascript
+    rules: {
+      ...js.configs.recommended.rules,
+      ...react.configs.recommended.rules,
+      ...react.configs['jsx-runtime'].rules,
+      ...reactHooks.configs.recommended.rules,
+      'react/jsx-no-target-blank': 'off',
+      'react-refresh/only-export-components': [
+        'warn',
+        { allowConstantExport: true },
+      ],
+      'react/prop-types': 'off', // add this line
+      'react/no-unescaped-entities': 'off', // add this line
+    },
 ```
 
-The first addition prevents warnings if you're not declaring types for your props (which we're not), and the second prevents warnings if you're using contractions within JSX.
+The first addition prevents warnings if you don't declare types for your props (which we're not), and the second prevents warnings if you use contractions within JSX.
 
 ### Running the development server
 
-To start the development server and view our app in the browser, we'll use the following command: 
+To start the development server and view our app in the browser, we'll use the following command:
 
 ```bash
 npm run dev
 ```
 
-You should see that `Vite` is available on port number 5173: 
+You should see that `Vite` is available on port number 5173:
 
 ```plaintext
 localhost:5173
@@ -74,7 +82,7 @@ git add .
 git commit -m "init commit"
 ```
 
-Make a new repository on [GitHub](https://github.com/) named styling-in-react. 
+Make a new repository on [GitHub](https://github.com/) named styling-in-react.
 
 Link your local project to your remote GitHub repo:
 
@@ -93,31 +101,34 @@ Add a directory called `components` inside `src`
 mkdir src/components
 ```
 
-Next we'll want to add the following directories inside of `components`:
+Next, we'll want to add the following directories inside the `components` directory:
 
 - example-1-normal-css
 - example-2-inline-css
-- example-3-css-in-js
-- example-4-styled-components
-- example-5-css-modules
-- example-6-sass
+- example-3-styled-components
+- example-4-css-modules
+- example-5-sass
 
-To do so, you can run the following command:
+To do so, you can run the following commands:
 
 ```bash
-mkdir src/components/example-1-normal-css src/components/example-2-inline-css src/components/example-3-css-in-js src/components/example-4-styled-components src/components/example-5-css-modules src/components/example-6-sass
+mkdir src/components/example-1-normal-css src/components/example-2-inline-css
+mkdir src/components/example-3-styled-components src/components/example-4-css-modules
+mkdir src/components/example-5-sass
 ```
 
 ## Creating the button components
 
-We will be re-creating the same component file inside each of these example component folders. This will act as our "starter code" for each example.
+We will recreate the same component file inside each of these example component folders. This will act as our "starter code" for each example.
 
-_Note:_ Typically purpose of components is reusability, however, because they all have different methods of incorporating their styles and css - we will be recreating the same component UI for each example.
+**Note**: Typically, the purpose of components is reusability, however, because they all have different methods of incorporating their styles and CSS - we will be recreating the same component UI for each example.
 
-Use the following command to create a `Button.jsx` file in each of the example folders ( 6 total ):
+Use the following command to create a `Button.jsx` file in each of the example folders (5 total):
 
 ```bash
-touch src/components/example-1-normal-css/Button.jsx src/components/example-2-inline-css/Button.jsx src/components/example-3-css-in-js/Button.jsx src/components/example-4-styled-components/Button.jsx src/components/example-5-css-modules/Button.jsx src/components/example-6-sass/Button.jsx
+touch src/components/example-1-normal-css/Button.jsx src/components/example-2-inline-css/Button.jsx
+touch src/components/example-3-styled-components/Button.jsx src/components/example-4-css-modules/Button.jsx
+touch src/components/example-5-sass/Button.jsx
 ```
 
 Include the following code in each of the Button files:
@@ -136,6 +147,7 @@ Now we'll modify `src/App.jsx` and get it ready for our examples:
 
 ```javascript
 // src/App.jsx
+
 import './App.css';
 // Later on, we'll import button components here
 
@@ -174,12 +186,13 @@ Let's add some of our own default styles to `src/App.css`:
 }
 ```
 
-Let's go get a cool Roboto font from [google fonts](https://fonts.google.com/specimen/Roboto+Flex).
+Let's get a cool Roboto font from [Google Fonts](https://fonts.google.com/specimen/Roboto+Flex).
 
-Import your fonts at the top of `App.css` and add your font family styles to `'*'`.
+Import your fonts at the top of `App.css` and add your font family styles to `'*'` (the universal selector).
 
 ```css
 /* src/App.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 * {
@@ -190,11 +203,11 @@ Import your fonts at the top of `App.css` and add your font family styles to `'*
 
 ## Delete `index.css`
 
-Remove the `index.css` file from the project. We wont need these default styles.
+Remove the `index.css` file from the project. We won't need these default styles.
 
-### Lets get styling...
+### Let's get styling!
 
-For each example we'll be using the same set of base styles ( with minor variations ) in our button components.
+For each example, we'll use the same base styling (with minor variations) in our button components.
 
 You'll want to refer back to these:
 

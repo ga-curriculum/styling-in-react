@@ -1,15 +1,19 @@
-# ![Styling in React - Imported CSS Files](./assets/hero.png)
+<h1>
+  <span class="headline">Styling in React</span>
+  <span class="subhead">Imported CSS Files</span>
+</h1>
 
-**Learning objective:** By the end of this lesson, students will be able add style via imported CSS files in their React app.
+**Learning objective:** By the end of this lesson, students will be able to add style via imported CSS files in their React app.
 
 ## Implementing external stylesheets
 
-Let's see how to implement imported CSS stylesheets in React app.
+Let's see how to implement imported CSS stylesheets in a React app.
 
 To begin, import `Button1` into `src/App.jsx`:
 
 ```jsx
 // src/App.jsx
+
 import './App.css';
 import Button1 from './components/example-1-normal-css/Button';
 
@@ -32,13 +36,15 @@ After creating the file, we can import it into `src/components/example-1-normal-
 
 ```jsx
 // src/components/example-1-normal-css/Button.jsx
+
 import './Button.css';
 ```
 
-Next we'll add a `btn` class to our `<button>` tag using the JSX attribute `className`:
+Next, we'll add a `btn` class to our `<button>` tag using the JSX attribute `className`:
 
 ```jsx
 // src/components/example-1-normal-css/Button.jsx
+
 import './Button.css';
 
 const Button = ({ buttonText }) => {
@@ -48,10 +54,11 @@ const Button = ({ buttonText }) => {
 export default Button;
 ```
 
-All the remains is to add some styling to `src/components/example-1-normal-css/Button.css`:
+All that remains is to add some styling to `src/components/example-1-normal-css/Button.css`:
 
 ```css
 /* src/components/example-1-normal-css/Button.css */
+
 .btn {
   background-color: #2465f1;
   border-radius: 8px;
@@ -61,8 +68,9 @@ All the remains is to add some styling to `src/components/example-1-normal-css/B
   width: 300px;
 }
 ```
-Check your work in the browser - Looks great!
+
+Check your work in the browser - it looks great!
 
 ## Benefits and pitfalls
 
-Using external CSS files to style React components is straightforward and familiar. However, it's important to remember that styles defined in these files are `global`. This means that if you use the same `class` or `id` names in different files, they might conflict with each other.
+Using external CSS files to style React components is straightforward and familiar. However, it's important to remember that the styles defined in these files are *global*. This means they might conflict if you use the same `class` or `id` names in different files.

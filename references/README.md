@@ -1,4 +1,7 @@
-# ![Styling in React - References](./assets/hero.png)
+<h1>
+  <span class="headline">Styling in React</span>
+  <span class="subhead">References</span>
+</h1>
 
 ## Lesson references
 
