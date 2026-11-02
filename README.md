@@ -32,7 +32,7 @@ Welcome to Styling in React! In this comprehensive module, we'll explore five di
 
 ### Solution code
 
-🏁 [Solution code](https://git.generalassemb.ly/modular-curriculum-all-courses/styling-in-react-solution)
+🏁 [Solution code](https://github.com/ga-curriculum/styling-in-react-solution)
 
 ### Course landing pages
 
